@@ -3808,7 +3808,13 @@ function buildXHTMLDocument(){
 '    .campo-id{ font-family:monospace; color:#8B917F; font-weight:400; font-size:.72rem; }\n' +
 '  </style>\n' +
 '</head>\n' +
-'<body>\n' +
+'<body><div id="aviso-prototipo" style="background-color: #fff3cd; color: #856404; padding: 10px 40px 10px 15px; font-family: sans-serif; font-size: 14px; border-bottom: 1px solid #ffeeba; position: relative; z-index: 9999; text-align: center;">
+  ⚠️ <strong>Ambiente de Teste:</strong> Este é um protótipo para teste de usabilidade. Algumas funções e dados são apenas simulados.
+  <button onclick="document.getElementById('aviso-prototipo').style.display='none'" title="Fechar aviso" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); background: none; border: none; color: #856404; font-size: 18px; font-weight: bold; cursor: pointer;">
+    &times;
+  </button>
+</div>
+\n' +
 logoHtml +
 '  <h1>Plano de Trabalho — dados exportados</h1>\n' +
 '  <p class="meta">Documento: ' + esc(nomeBaseDocumento()) + ' | Formulário: ' + esc(data.formulario) + ' | Gerado em: ' + esc(data.geradoEm) + '</p>\n' +
